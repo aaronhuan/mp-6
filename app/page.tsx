@@ -37,7 +37,8 @@ export default function Home() {
     const clientid = process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID;
     // const clientid = process.env.CLIENT_ID; <- returns undefined b/c can't access it 
 
-    const redirectURI = process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI;
+    const redirectURI = `${window.location.origin}/callback`
+    // const redirectURI = process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI;<- giving me issues so 
     // const redirectURI = process.env.REDIRECT_URI;
 
     const githubRequestURL =`https://github.com/login/oauth/authorize?scope=read:user&client_id=${clientid}&redirect_uri=${redirectURI}`
