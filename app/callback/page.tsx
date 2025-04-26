@@ -51,7 +51,7 @@ export default async function Callback({searchParams}: {searchParams: SearchPara
   )
   const userdata = await userres.json()
   if (!userdata.login){
-    return <p> couldn't get github user</p>
+    return <p> could not get github user</p>
   } 
 
   return(
