@@ -1,5 +1,4 @@
 'use server';
-import Header from "@/components/Header";
 import Body from "@/components/Body";
 //example: http://localhost:3000/callback?code=cbf8645529a6c079822f
 //want to extract the code = ....

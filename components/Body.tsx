@@ -1,5 +1,4 @@
 'use client'
-import { userAgent } from "next/server";
 import styled from "styled-components";
 import Header from "./Header";
 
